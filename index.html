@@ -33,18 +33,18 @@
             <img class="bg-banner" src="./assets/banner.jpg" />
             <section class="card">
                 <div class="banner-card">
-                    <div class="week-1">
+                    <div onclick="weeklyPromotions(event, 'tab1')" class="week-1 weekTabs active">
                         <div class="week-text">
                             <h5>1-4 კვირა</h5>
                             <p>2 000 000₾</p>
                         </div>
-                        <img src="./assets/tab-bg-active.png">
+                        <img src="./assets/tab-bg.png">
                     </div>
-                    <div class="week-1">
+                    <div onclick="weeklyPromotions(event, 'tab2')" class="weekTabs week-1">
                         <div class="week-text">
                             <div class="week-icon dark">
                                 <img src="./assets/lock.png" alt="">
-                                <h5>1-4 კვირა</h5>
+                                <h5>5-8 კვირა</h5>
                             </div>
                             <p class="dark">2 000 000₾</p>
                         </div>
@@ -54,7 +54,7 @@
                         <div class="week-text">
                             <div class="week-icon dark">
                                 <img src="./assets/lock.png" alt="">
-                                <h5>1-4 კვირა</h5>
+                                <h5>5-8 კვირა</h5>
                             </div>
                             <p class="dark">2 000 000₾</p>
                         </div>
@@ -64,7 +64,7 @@
                         <div class="week-text">
                             <div class="week-icon dark">
                                 <img src="./assets/lock.png" alt="">
-                                <h5>1-4 კვირა</h5>
+                                <h5>5-8 კვირა</h5>
                             </div>
                             <p class="dark">2 000 000₾</p>
                         </div>
@@ -74,17 +74,17 @@
                 </div>
             </section>
 
-            <!-- <div class="second-section" id="second">
+            <div class="second-section" id="second">
                 <h1 class="date-title">12 კვირის განმავლობაში, მიიღე ფულადი პრიზები ყოველკვირეული საპრიზო ფონდიდან</h1>
                 <div class="date">
                     <ul>
-                        <li class="active">2.07-29.07</li>
-                        <li>2.07-29.07</li>
-                        <li>2.07-29.07</li>
-                        <li>2.07-29.07</li>
+                        <li onclick="weeklyPromotions(event, 'tab1')" class="weekTabs active">2.07-29.07</li>
+                        <li onclick="weeklyPromotions(event, 'tab2')" class="weekTabs">2.07-29.07</li>
+                        <li class="weekTabs">2.07-29.07</li>
+                        <li class="weekTabs">2.07-29.07</li>
                     </ul>
                 </div>
-                <div class="panel">
+                <div class="panel promotions" id="tab1">
                     <div class="panel-2 left-panel">
                         <div class="panel-text">
                             <h3>ᲛᲝᲮᲕᲓᲘ ᲧᲝᲕᲔᲚᲙᲕᲘᲠᲔᲣᲚ ᲚᲘᲓᲔᲠᲑᲝᲠᲓᲨᲘ</h3>
@@ -94,7 +94,7 @@
                         <div class="table">
                             <div class="table-title">
                                 <h1 class="cyan">ყოველდღიური 248 000₾</h1>
-                                <h1 class="cyan bold">Top 1500</h1>
+                                <h1 class="dark-cyan">Top 1500</h1>
                             </div>
                             <table>
                                 <tr class="rank-title">
@@ -141,8 +141,8 @@
                         </div>
                         <div class="table">
                             <div class="table-title">
-                                <h1 class="cyan">ყოველდღიური 248 000₾</h1>
-                                <h1 class="cyan bold">Top 1500</h1>
+                                <h1 class="orange">ყოველდღიური 248 000₾</h1>
+                                <h1 class="dark-orange">Top 1500</h1>
                             </div>
                             <table>
                                 <tr class="rank-title">
@@ -183,47 +183,36 @@
                             ფანჯარაში</p>
                     </div>
                 </div>
-            </div> -->
 
-            <!-- <div class="third-section" id="third">
-                <h1 class="date-title">12 კვირის განმავლობაში, მიიღე ფულადი პრიზები ყოველკვირეული საპრიზო ფონდიდან</h1>
-                <div class="date">
-                    <ul>
-                        <li>2.07-29.07</li>
-                        <li class="active">2.07-29.07</li>
-                        <li>2.07-29.07</li>
-                        <li>2.07-29.07</li>
-                    </ul>
-                </div>
-    
-                <div class="popup">
-                    <img src="./assets/multipliers-img.png" />
-                    <div class="popup-texts">
-                        <h3>ᲓᲐᲘᲭᲘᲠᲔ X-ᲔᲑᲘ</h3>
-                        <p>დაიკავე საპრიზო ადგილი ლიდერბორდში ან ჩამოაგდე ფულადი პრიზის შემთხვევითი მულტიპლიკატორი
-                        </p>
+                <div class="panel second-panel promotions" id="tab2" style="display: none">
+                    <div class="popup">
+                        <img src="./assets/multipliers-img.png" />
+                        <div class="popup-texts">
+                            <h3>ᲓᲐᲘᲭᲘᲠᲔ X-ᲔᲑᲘ</h3>
+                            <p>დაიკავე საპრიზო ადგილი ლიდერბორდში ან ჩამოაგდე ფულადი პრიზის შემთხვევითი მულტიპლიკატორი
+                            </p>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="panel">
-                    <div class="panel-2 left-panel">
+                    <div class="panel-2 left-pane second-dection__panel">
                         <div class="panel-text">
                             <h3>ᲛᲝᲮᲕᲓᲘ ᲧᲝᲕᲔᲚᲙᲕᲘᲠᲔᲣᲚ ᲚᲘᲓᲔᲠᲑᲝᲠᲓᲨᲘ</h3>
-                            <p>დაიკავე საპრიზო ადგილი: ერთ სპინზე დაფიქსირებული მოგების ყველაზე მაღალი კოეფიციენტი არის შენი
+                            <p>დაიკავე საპრიზო ადგილი: ერთ სპინზე დაფიქსირებული მოგების ყველაზე მაღალი კოეფიციენტი არის
+                                შენი
                                 ქულა
                                 ლიდერბორდში</p>
                         </div>
                         <div class="table">
                             <div class="table-title">
                                 <h1 class="cyan">ყოველდღიური 248 000₾</h1>
-                                <h1 class="cyan bold">Top 1500</h1>
+                                <h1 class="dark-cyan">Top 1500</h1>
                                 <div class="mark">
                                     <img src="./assets/example-icon.png" alt="">
                                     <span class="hover-box">
                                         <div class="tringle">
-    
+
                                         </div>
-                                        <p>მოთამაშემ 10₾-იანი სპინით დააფიქსირა ყველაზე მაღალი მოგება და ლიდერბორდში დაიკავა
+                                        <p>მოთამაშემ 10₾-იანი სპინით დააფიქსირა ყველაზე მაღალი მოგება და ლიდერბორდში
+                                            დაიკავა
                                             პირველი ადგილი, ის მიიღებს 10₾X10 000=100 000₾-ს</p>
                                     </span>
                                 </div>
@@ -257,33 +246,35 @@
                                     <td>21-50</td>
                                     <td>200ლ</td>
                                 </tr>
-    
+
                             </table>
                         </div>
                     </div>
-    
+
                     <div class="plus">
                         <img src="./assets/plus.png" />
                     </div>
-    
-                    <div class="panel-2 right-panel">
+
+                    <div class="panel-2 right-panel second-dection__panel">
                         <div class="panel-text">
                             <h3>ᲩᲐᲛᲝᲐᲒᲓᲔ ᲛᲣᲚᲢᲘᲞᲚᲘᲙᲐᲢᲝᲠᲔᲑᲘ ᲐᲜ ᲛᲘᲘᲦᲔ ᲤᲠᲘᲡᲞᲘᲜᲔᲑᲘ</h3>
-                            <p>მიიღე ფულადი პრიზი: თამაშის დროს შემთხვევით ჩამოგდებული ფულადი მულტიპლიკატორი გამრავლებული
+                            <p>მიიღე ფულადი პრიზი: თამაშის დროს შემთხვევით ჩამოგდებული ფულადი მულტიპლიკატორი
+                                გამრავლებული
                                 ფსონის
                                 ოდენობაზე</p>
                         </div>
                         <div class="table">
                             <div class="table-title">
-                                <h1 class="cyan">ყოველდღიური 36 000₾</h1>
-                                <h1 class="cyan bold">500 პრიზი</h1>
+                                <h1 class="orange">ყოველდღიური 36 000₾</h1>
+                                <h1 class="dark-orange">500 პრიზი</h1>
                                 <div class="mark">
                                     <img src="./assets/example-icon.png" alt="">
                                     <span class="hover-box">
                                         <div class="tringle">
-    
+
                                         </div>
-                                        <p>მოთამაშემ 10₾-იანი სპინით დააფიქსირა ყველაზე მაღალი მოგება და ლიდერბორდში დაიკავა
+                                        <p>მოთამაშემ 10₾-იანი სპინით დააფიქსირა ყველაზე მაღალი მოგება და ლიდერბორდში
+                                            დაიკავა
                                             პირველი ადგილი, ის მიიღებს 10₾X10 000=100 000₾-ს</p>
                                     </span>
                                 </div>
@@ -317,11 +308,11 @@
                                     <td>320</td>
                                     <td>10ლ</td>
                                 </tr>
-    
+
                             </table>
                         </div>
                     </div>
-                    <div class="bottom-text">
+                    <div class="bottom-text second-section__bottom">
                         <p>*პრიზები დაირიცხება ავტომატურად მოგებისთანავე.</p>
                         <p>*ლიდერბორდი და დარჩენილი ქეშ დროფ პრიზების ოდენობა განახლდება ავტომატურად, მონაწილე თამაშების
                             ფანჯარაში</p>
@@ -335,94 +326,107 @@
                             10 ცალ 4 ლარიან ფრისპინს</p>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
+            <section class="fourth-section" id="fourth">
+                <div class="slider-wrap">
+                    <div class="slider-wrap-text">
+                        <h1>დაატრიალე რჩეული სლოტები:</h1>
+                        <p>*სპინზე ფსონის მინ. რაოდენობა შეზღუდული არ არის.</p>
+                    </div>
+                    <div class="slider">
+                        <div class="slider-inner">
+                            <div class="item">
+                                <img src="./assets/thumb/pyramidKing.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/thumb/BigBassBonanza.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/thumb/AztecBonanza.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/thumb/aztecGems.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/thumb/BigBassBonanza.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/thumb/bronco.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/thumb/FishinReel.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/thumb/DanceParty.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/thumb/AztecBonanza.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/thumb/TheDogHouse.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="prog-bar-inner"></div>
+                    </div>
+                </div>
         </div>
 
 
-        <section class="fourth-sectoin" id="fourth">
-            <!-- <h1>დაატრიალე რჩეული სლოტები:</h1>
-            <p>*სპინზე ფსონის მინ. რაოდენობა შეზღუდული არ არის.</p> -->
+        <div class="accordation">
+            <h1>წესები და პირობები</h1>
+            <ul>
+                <li>
+                    <input type="checkbox" checked>
+                    <i class="arrow"></i>
+                    <h2><i class="fas fa-code"></i>როდის იწყება და რა ფორმატით გაიმართება აქცია</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, alias!
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i class="arrow"></i>
+                    <h2><i class="fas fa-code"></i>როგორ მივიღო აქციაში მონაწილეობა?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                        aliquam aspernatur necessitatibus placeat, qui velit?
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i class="arrow"></i>
+                    <h2><i class="fas fa-code"></i>სხვადასვა</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non molestiae
+                        optio incidunt et. Quam nemo voluptates sequi voluptatum corporis deleniti?
+                    </p>
+                </li>
+            </ul>
+        </div>
 
-            <div class="slider-wrap">
-                <h1>დაატრიალე რჩეული სლოტები:</h1>
-            <p>*სპინზე ფსონის მინ. რაოდენობა შეზღუდული არ არის.</p>
-                <div class="slider">
-                    <div class="slider-inner">
-                        <div class="item">
-                            <img src="./assets/thumb/pyramidKing.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="./assets/thumb/BigBassBonanza.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="./assets/thumb/AztecBonanza.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="./assets/thumb/aztecGems.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="./assets/thumb/BigBassBonanza.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="./assets/thumb/bronco.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="./assets/thumb/FishinReel.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="./assets/thumb/DanceParty.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="./assets/thumb/AztecBonanza.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="./assets/thumb/TheDogHouse.jpg" alt="">
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="progress-bar">
-                    <div class="prog-bar-inner"></div>
-                </div>
+        <div class="gradient-line">
+
+        </div>
+        <div class="footer">
+            <!-- <img src="./assets/border-bg.png"> -->
+            <div class="arrow-button arrow-button__left">
+                <img src="./assets/tab-slider-arrow-r.png">
+                <h3>წინა აქცია</h3>
             </div>
-
-            <div class="accordation">
-                <h1>წესები და პირობები</h1>
-                <button class="accordion">როდის იწყება და რა ფორმატით გაიმართება აქცია</button>
-                <div class="panel">
-                    <p>Lorem ipsum...</p>
-                </div>
-
-                <button class="accordion">როგორ მივიღო აქციაში მონაწილეობა?</button>
-                <div class="panel">
-                    <p>Lorem ipsum...</p>
-                </div>
-
-                <button class="accordion">სხვადასვა</button>
-                <div class="panel">
-                    <p>Lorem ipsum...</p>
-                </div>
+            <button class="place-bet">Place a bet</button>
+            <div class="arrow-button arrow-button__right">
+                <h3>შემდეგი ქაცია</h3>
+                <img src="./assets/tab-slider-arrow-r.png">
             </div>
+        </div>
 
-            <div class="footer">
-                <img src="./assets/border-bg.png">
-                <div class="left">
-                    <img src="./assets/tab-slider-arrow-r.png">
-                    <h3>წინა აქცია</h3>
-                </div>
-                <button>Place a bet</button>
-                <div class="right">
-                    <img src="./assets/tab-slider-arrow-r.png">
-                    <h3>შემდეგი აქცია</h3>
-                </div>
-            </div>
+
         </section>
 
     </div>
-    </div>
+    <script src="main.js"></script>
 
-    <script src="./main.js"></script>
 </body>
 
 </html>
