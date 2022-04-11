@@ -6,21 +6,51 @@
         margin-left: 15px;
     }
 
+    .banner img {
+        margin-right: -43px;
+    }
+
+    .banner-cards {
+        min-width: 125%;
+    }
+
+    .card {
+        margin-right: 10px;
+    }
+
+    .banner-cards img {
+        max-width: 100%;
+    }
+
     .panel {
         flex-wrap: wrap;
         margin: auto;
-        width: 97%;
+        width: 90%;
         height: 100%;
-        padding-bottom: 100px;
+        padding-bottom: 160px;
     }
 
+
     .right-panel {
-        margin-top: 155px;
+        margin-left: 0;
+    }
+
+    .left-panel {
+        margin-right: 0;
+    }
+
+    .prizes-bottom-text {
+        max-width: 100%;
+        margin: 30px 10px 25px 10px;
     }
 
     .plus {
-        top: 104%;
-        left: 37%;
+        top: 93%;
+        left: 39%;
+    }
+
+    .plus img {
+        width: 85px;
     }
 
     .slider,
@@ -72,18 +102,69 @@
 
     .firstpage h1 {
         font-size: 16px;
+        padding: 0;
     }
 
     .firstpage h3 {
         font-size: 14px;
+        padding: 0;
     }
+
+    .banner-title {
+        padding: 0 0 0 10px;
+    }
+
+    .banner-cards {
+        width: 125%;
+    }
+
+    .card {
+        margin-right: 10px;
+    }
+
+    .banner-cards img {
+        max-width: 100%;
+    }
+    
+    .card-text h5 {
+        font-size: 16px;
+    }
+
+    .card-text p {
+        font-size: 17px;
+    }
+
+    .week-icon h5 {
+        font-size: 12px;
+    }
+
+    .popup {
+        max-width: 90%;
+    }
+
+    /* .popup-texts p {
+        max-width: 90%;
+    } */
 
     .prizes-title {
         font-size: 14px;
     }
 
-    .date-tabs ul li {
-        width: 120px;
+    /* .date-tabs ul li {
+        width: 80px;
+    }
+
+    .date-tabs ul {
+        width: 80px;
+    } */
+
+
+    .right-panel {
+        margin-left: 0;
+    }
+
+    .left-panel {
+        margin-right: 0;
     }
 
     .slider-wrap-text {
@@ -115,6 +196,7 @@
 }
 
 
+
 @media (max-width: 480px) {
 
     .banner {
@@ -122,8 +204,8 @@
     }
 
     .banner img {
-        width: 54%;
-        margin-left: 46%;
+        width: 41%;
+        margin-left: 59%;
     }
 
     .banner-cards img {
@@ -131,13 +213,60 @@
         margin: 0 15px 0 0;
     }
 
-    .date-tabs ul li {
-        width: 80px;
+    .banner-cards {
+        min-width: 165%;
+    }
+
+    .card {
+        margin-right: 10px;
+    }
+
+    .banner-cards img {
+        max-width: 100%;
+    }
+
+    .card-text h5 {
         font-size: 12px;
     }
 
+    .card-text p {
+        font-size: 12px;
+    }
+
+    .week-icon h5 {
+        font-size: 12px;
+    }
+
+
+    .date-tabs ul li {
+        width: 56px;
+        font-size: 11px;
+    }
+
+    .popup {
+        max-width: 345px;
+      }
+      
+      .popup-texts h3 {
+        margin-left: 0;
+      }
+      
+      .popup-texts p{
+        text-align: start;
+        letter-spacing: -0.8px;
+      }
+
+
+    .right-panel {
+        margin-left: 0;
+    }
+
+    .left-panel {
+        margin-right: 0;
+    }
+
     .table {
-        width: 320px;
+        width: 310px;
     }
 
     .prizes-title {
@@ -169,12 +298,12 @@
     }
 
     .plus {
-        top: 108%;
-        left: 39%;
+        top: 93%;
+        left: 41%;
     }
 
     .plus img {
-        width: 100px;
+        width: 70px;
     }
 
     .prizes-bottom-text {
