@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/bpg-arial-caps.min.css">
+    <link rel="stylesheet" href="css/bpg-arial.min.css">
     <title>Pragmatic</title>
 </head>
 
@@ -14,9 +17,10 @@
         <div class="bg-wall">
             <div class="navbar">
                 <h3>10 იანვრიდან - 12 მარტამდე</h3>
-                <img src="./assets/close (1).png" />
+                <a href="#" class="close"></a>
             </div>
-            <section class="first-section" id="first">
+            <!-- Firstpage with cards -->
+            <section class="firstpage">
                 <div class="banner">
                     <div class="banner-title">
                         <p>სლოტები</p>
@@ -31,59 +35,59 @@
                 </div>
             </section>
             <img class="bg-banner" src="./assets/banner.jpg" />
-            <section class="card">
-                <div class="banner-card">
-                    <div onclick="weeklyPromotions(event, 'tab1')" class="week-1 weekTabs active">
-                        <div class="week-text">
-                            <h5>1-4 კვირა</h5>
-                            <p>2 000 000₾</p>
-                        </div>
-                        <img src="./assets/tab-bg.png">
+            <section class="cards banner-cards">
+                <div class="card  active">
+                    <div class="card-text">
+                        <h5>1-4 კვირა</h5>
+                        <p>2 000 000₾</p>
                     </div>
-                    <div onclick="weeklyPromotions(event, 'tab2')" class="weekTabs week-1">
-                        <div class="week-text">
-                            <div class="week-icon dark">
-                                <img src="./assets/lock.png" alt="">
-                                <h5>5-8 კვირა</h5>
-                            </div>
-                            <p class="dark">2 000 000₾</p>
+                    <img src="./assets/tab-bg.png">
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="week-icon dark">
+                            <img src="./assets/lock.png" alt="">
+                            <h5>5-8 კვირა</h5>
                         </div>
-                        <img src="./assets/tab-bg.png">
+                        <p class="dark">2 000 000₾</p>
                     </div>
-                    <div class="week-1">
-                        <div class="week-text">
-                            <div class="week-icon dark">
-                                <img src="./assets/lock.png" alt="">
-                                <h5>5-8 კვირა</h5>
-                            </div>
-                            <p class="dark">2 000 000₾</p>
+                    <img src="./assets/tab-bg.png">
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="week-icon dark">
+                            <img src="./assets/lock.png" alt="">
+                            <h5>5-8 კვირა</h5>
                         </div>
-                        <img src="./assets/tab-bg.png">
+                        <p class="dark">2 000 000₾</p>
                     </div>
-                    <div class="week-1">
-                        <div class="week-text">
-                            <div class="week-icon dark">
-                                <img src="./assets/lock.png" alt="">
-                                <h5>5-8 კვირა</h5>
-                            </div>
-                            <p class="dark">2 000 000₾</p>
+                    <img src="./assets/tab-bg.png">
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="week-icon dark">
+                            <img src="./assets/lock.png" alt="">
+                            <h5>5-8 კვირა</h5>
                         </div>
-                        <img src="./assets/tab-bg.png">
+                        <p class="dark">2 000 000₾</p>
                     </div>
-
+                    <img src="./assets/tab-bg.png">
                 </div>
             </section>
 
-            <div class="second-section" id="second">
-                <h1 class="date-title">12 კვირის განმავლობაში, მიიღე ფულადი პრიზები ყოველკვირეული საპრიზო ფონდიდან</h1>
-                <div class="date">
+            <!-- Weekly prizes  -->
+            <div class="prizes">
+                <h1 class="prizes-title">12 კვირის განმავლობაში, მიიღე ფულადი პრიზები ყოველკვირეული საპრიზო ფონდიდან
+                </h1>
+                <div class="date-tabs">
                     <ul>
-                        <li onclick="weeklyPromotions(event, 'tab1')" class="weekTabs active">2.07-29.07</li>
-                        <li onclick="weeklyPromotions(event, 'tab2')" class="weekTabs">2.07-29.07</li>
-                        <li class="weekTabs">2.07-29.07</li>
-                        <li class="weekTabs">2.07-29.07</li>
+                        <li class="tabs active" onclick="weeklyPromotions(event, 'tab1')">2.07-29.07</li>
+                        <li class="tabs" onclick="weeklyPromotions(event, 'tab2')">2.07-29.07</li>
+                        <li class="tabs">2.07-29.07</li>
+                        <li class="tabs">2.07-29.07</li>
                     </ul>
                 </div>
+                <!-- First weekly promotion -->
                 <div class="panel promotions" id="tab1">
                     <div class="panel-2 left-panel">
                         <div class="panel-text">
@@ -101,39 +105,37 @@
                                     <th>ადგილი</th>
                                     <th>პრიზი</th>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>1</td>
                                     <td>40 000ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>2</td>
                                     <td>20 000ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>3</td>
                                     <td>8 000ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>4-10</td>
                                     <td>4 000ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>11-20</td>
                                     <td>2 000ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>21-50</td>
                                     <td>800ლ</td>
                                 </tr>
 
                             </table>
                         </div>
+                        <div class="plus">
+                            <img src="./assets/plus.png" />
+                        </div>
                     </div>
-
-                    <div class="plus">
-                        <img src="./assets/plus.png" />
-                    </div>
-
                     <div class="panel-2 right-panel">
                         <div class="panel-text">
                             <h3>ᲧᲝᲕᲔᲚᲓᲦᲔ ᲛᲘᲘᲦᲔ ᲨᲔᲛᲗᲮᲕᲔᲕᲘᲗᲘ ᲤᲣᲚᲐᲓᲘ ᲞᲠᲘᲖᲘ ᲜᲔᲑᲘᲡᲛᲘᲔᲠ ᲡᲞᲘᲜᲖᲔ</h3>
@@ -149,27 +151,27 @@
                                     <th>რაოდენობა</th>
                                     <th>პრიზი</th>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>1</td>
                                     <td>4 000ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>2</td>
                                     <td>2 000ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>5</td>
                                     <td>400ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>12</td>
                                     <td>200ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>110</td>
                                     <td>80ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>370</td>
                                     <td>40ლ</td>
                                 </tr>
@@ -177,13 +179,14 @@
                             </table>
                         </div>
                     </div>
-                    <div class="bottom-text">
+                    <div class="prizes-bottom-text">
                         <p>*პრიზები დაირიცხება ავტომატურად მოგებისთანავე.</p>
                         <p>*ლიდერბორდი და დარჩენილი ქეშ დროფ პრიზების ოდენობა განახლდება ავტომატურად, მონაწილე თამაშების
                             ფანჯარაში</p>
                     </div>
                 </div>
 
+                <!-- Second weekly promotion -->
                 <div class="panel second-panel promotions" id="tab2" style="display: none">
                     <div class="popup">
                         <img src="./assets/multipliers-img.png" />
@@ -193,7 +196,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="panel-2 left-pane second-dection__panel">
+                    <div class="panel-2 left-panel second-section__panel">
                         <div class="panel-text">
                             <h3>ᲛᲝᲮᲕᲓᲘ ᲧᲝᲕᲔᲚᲙᲕᲘᲠᲔᲣᲚ ᲚᲘᲓᲔᲠᲑᲝᲠᲓᲨᲘ</h3>
                             <p>დაიკავე საპრიზო ადგილი: ერთ სპინზე დაფიქსირებული მოგების ყველაზე მაღალი კოეფიციენტი არის
@@ -205,11 +208,10 @@
                             <div class="table-title">
                                 <h1 class="cyan">ყოველდღიური 248 000₾</h1>
                                 <h1 class="dark-cyan">Top 1500</h1>
-                                <div class="mark">
+                                <div class="table-question-mark">
                                     <img src="./assets/example-icon.png" alt="">
                                     <span class="hover-box">
-                                        <div class="tringle">
-
+                                        <div class="box-arrow-top">
                                         </div>
                                         <p>მოთამაშემ 10₾-იანი სპინით დააფიქსირა ყველაზე მაღალი მოგება და ლიდერბორდში
                                             დაიკავა
@@ -222,40 +224,38 @@
                                     <th>ადგილი</th>
                                     <th>მულტიპლიკატორი</th>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>1</td>
                                     <td>10 000ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>2</td>
                                     <td>5 000ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>3</td>
                                     <td>2 000ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>4-10</td>
                                     <td>1 500ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>11-20</td>
                                     <td>500ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>21-50</td>
                                     <td>200ლ</td>
                                 </tr>
 
                             </table>
                         </div>
+                        <div class="plus">
+                            <img src="./assets/plus.png" />
+                        </div>
                     </div>
-
-                    <div class="plus">
-                        <img src="./assets/plus.png" />
-                    </div>
-
-                    <div class="panel-2 right-panel second-dection__panel">
+                    <div class="panel-2 right-panel second-section__panel">
                         <div class="panel-text">
                             <h3>ᲩᲐᲛᲝᲐᲒᲓᲔ ᲛᲣᲚᲢᲘᲞᲚᲘᲙᲐᲢᲝᲠᲔᲑᲘ ᲐᲜ ᲛᲘᲘᲦᲔ ᲤᲠᲘᲡᲞᲘᲜᲔᲑᲘ</h3>
                             <p>მიიღე ფულადი პრიზი: თამაშის დროს შემთხვევით ჩამოგდებული ფულადი მულტიპლიკატორი
@@ -266,12 +266,11 @@
                         <div class="table">
                             <div class="table-title">
                                 <h1 class="orange">ყოველდღიური 36 000₾</h1>
-                                <h1 class="dark-orange">500 პრიზი</h1>
-                                <div class="mark">
+                                <h1 class="dark-orange">1500 პრიზი</h1>
+                                <div class="table-question-mark">
                                     <img src="./assets/example-icon.png" alt="">
                                     <span class="hover-box">
-                                        <div class="tringle">
-
+                                        <div class="box-arrow-top">
                                         </div>
                                         <p>მოთამაშემ 10₾-იანი სპინით დააფიქსირა ყველაზე მაღალი მოგება და ლიდერბორდში
                                             დაიკავა
@@ -284,27 +283,27 @@
                                     <th>რაოდენობა</th>
                                     <th>პრიზი</th>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>1</td>
                                     <td>800ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>2</td>
                                     <td>400ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>5</td>
                                     <td>100ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>12</td>
                                     <td>50ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>110</td>
                                     <td>20ლ</td>
                                 </tr>
-                                <tr class="margin">
+                                <tr class="rank-tr">
                                     <td>320</td>
                                     <td>10ლ</td>
                                 </tr>
@@ -312,7 +311,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="bottom-text second-section__bottom">
+                    <div class="prizes-bottom-text second-section__bottom">
                         <p>*პრიზები დაირიცხება ავტომატურად მოგებისთანავე.</p>
                         <p>*ლიდერბორდი და დარჩენილი ქეშ დროფ პრიზების ოდენობა განახლდება ავტომატურად, მონაწილე თამაშების
                             ფანჯარაში</p>
@@ -328,7 +327,8 @@
                 </div>
             </div>
 
-            <section class="fourth-section" id="fourth">
+            <!-- Slider with progress bar -->
+            <section class="slider-section">
                 <div class="slider-wrap">
                     <div class="slider-wrap-text">
                         <h1>დაატრიალე რჩეული სლოტები:</h1>
@@ -373,60 +373,60 @@
                         <div class="prog-bar-inner"></div>
                     </div>
                 </div>
-        </div>
+            </section>
 
-
-        <div class="accordation">
-            <h1>წესები და პირობები</h1>
-            <ul>
-                <li>
-                    <input type="checkbox" checked>
-                    <i class="arrow"></i>
-                    <h2><i class="fas fa-code"></i>როდის იწყება და რა ფორმატით გაიმართება აქცია</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, alias!
-                    </p>
-                </li>
-                <li>
-                    <input type="checkbox" checked>
-                    <i class="arrow"></i>
-                    <h2><i class="fas fa-code"></i>როგორ მივიღო აქციაში მონაწილეობა?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-                        aliquam aspernatur necessitatibus placeat, qui velit?
-                    </p>
-                </li>
-                <li>
-                    <input type="checkbox" checked>
-                    <i class="arrow"></i>
-                    <h2><i class="fas fa-code"></i>სხვადასვა</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non molestiae
-                        optio incidunt et. Quam nemo voluptates sequi voluptatum corporis deleniti?
-                    </p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="gradient-line">
-
-        </div>
-        <div class="footer">
-            <!-- <img src="./assets/border-bg.png"> -->
-            <div class="arrow-button arrow-button__left">
-                <img src="./assets/tab-slider-arrow-r.png">
-                <h3>წინა აქცია</h3>
+            <!-- Accordion for terms and conditions -->
+            <div class="accordion">
+                <h1>წესები და პირობები</h1>
+                <ul>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i class="arrow"></i>
+                        <div class="checkbox-text">
+                            <h2>როდის იწყება და რა ფორმატით გაიმართება აქცია</h2>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, alias!
+                        </p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i class="arrow"></i>
+                        <div class="checkbox-text">
+                            <h2>როგორ მივიღო აქციაში მონაწილეობა?</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                            aliquam aspernatur necessitatibus placeat, qui velit?
+                        </p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i class="arrow"></i>
+                        <div class="checkbox-text">
+                            <h2>სხვადასვა</h2>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non molestiae
+                            optio incidunt et. Quam nemo voluptates sequi voluptatum corporis deleniti?
+                        </p>
+                    </li>
+                </ul>
             </div>
-            <button class="place-bet">Place a bet</button>
-            <div class="arrow-button arrow-button__right">
-                <h3>შემდეგი ქაცია</h3>
-                <img src="./assets/tab-slider-arrow-r.png">
+
+            <!-- Footer with blue line -->
+            <div class="gradient-line"></div>
+            <div class="footer">
+                <div class="footer-arrow-button arrow-left">
+                    <img src="./assets/tab-slider-arrow-r.png">
+                    <h3>წინა აქცია</h3>
+                </div>
+                <button class="place-bet">Place a bet</button>
+                <div class="footer-arrow-button arrow-right">
+                    <h3>შემდეგი ქაცია</h3>
+                    <img src="./assets/tab-slider-arrow-r.png">
+                </div>
             </div>
         </div>
-
-
-        </section>
-
     </div>
     <script src="main.js"></script>
-
 </body>
 
 </html>

@@ -1,0 +1,226 @@
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    section {
+        margin-left: 15px;
+    }
+
+    .panel {
+        flex-wrap: wrap;
+        margin: auto;
+        width: 97%;
+        height: 100%;
+        padding-bottom: 100px;
+    }
+
+    .right-panel {
+        margin-top: 155px;
+    }
+
+    .plus {
+        top: 104%;
+        left: 37%;
+    }
+
+    .slider,
+    .progress-bar {
+        width: 109%;
+    }
+
+    .slider-inner {
+        width: 2000px;
+    }
+
+    .item img {
+        width: 180px
+    }
+
+    .accordion ul {
+        width: 90%;
+    }
+
+    .checkbox-text {
+        width: 90%;
+    }
+
+    .checkbox-text h2 {
+        font-size: 15px;
+    }
+
+    .accordion ul li .arrow {
+        right: 13%;
+    }
+
+    .accordion ul li p {
+        width: 82%;
+        height: 100px;
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .firstpage {
+        margin: auto;
+        max-width: 610px;
+    }
+
+    .firstpage h1 {
+        font-size: 16px;
+    }
+
+    .firstpage h3 {
+        font-size: 14px;
+    }
+
+    .prizes-title {
+        font-size: 14px;
+    }
+
+    .date-tabs ul li {
+        width: 120px;
+    }
+
+    .slider-wrap-text {
+        font-size: 14px;
+    }
+
+    .checkbox-text h2 {
+        width: 290px;
+        font-size: 14px;
+    }
+
+    .arrow {
+        right: -20%;
+    }
+
+    .slider-wrap-text {
+        font-size: 12px;
+    }
+
+    .accordion ul li p {
+        width: 75%;
+        height: 130px;
+        font-size: 12px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .banner {
+        display: block;
+    }
+
+    .banner img {
+        width: 54%;
+        margin-left: 46%;
+    }
+
+    .banner-cards img {
+        position: relative;
+        margin: 0 15px 0 0;
+    }
+
+    .date-tabs ul li {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .table {
+        width: 320px;
+    }
+
+    .prizes-title {
+        font-size: 12px;
+    }
+
+    .table-title h1 {
+        font-size: 14px;
+    }
+
+    .rank-tr td {
+        font-size: 10px;
+    }
+
+    .panel {
+        width: 102%;
+    }
+
+    .panel h3 {
+        font-size: 14px;
+    }
+
+    .panel p {
+        font-size: 12px;
+    }
+
+    .panel-text p {
+        margin-top: 10px;
+    }
+
+    .plus {
+        top: 108%;
+        left: 39%;
+    }
+
+    .plus img {
+        width: 100px;
+    }
+
+    .prizes-bottom-text {
+        width: 403px;
+    }
+
+    .slider-wrap-text {
+        font-size: 12px;
+    }
+
+    .progress-bar {
+        margin-bottom: -15%;
+    }
+
+    .checkbox-text h2 {
+        width: 200px;
+        font-size: 13px;
+    }
+
+    .accordion ul li p {
+        width: 75%;
+        height: 130px;
+        font-size: 12px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer h3 {
+        display: none;
+    }
+
+    .footer-arrow-button {
+        width: 0;
+    }
+
+    .arrow-right {
+        padding-right: 10px;
+    }
+
+    .place-bet {
+        width: 140px;
+        height: 50px;
+    }
+
+}
+
+/* End */
