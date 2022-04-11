@@ -410,6 +410,7 @@ table td:last-child {
   top: 38%;
   left: 88%;
   z-index: 2;
+  cursor: pointer;
 }
 
 .prizes-bottom-text {
@@ -819,6 +820,7 @@ h2 {
   color: #ffffff;
   background-color: #f05a22;
   border: 0;
+  cursor: pointer;
 }
 
 .footer-arrow-button {
@@ -830,6 +832,7 @@ h2 {
   height: 16px;
   font-size: 13px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .footer img {
