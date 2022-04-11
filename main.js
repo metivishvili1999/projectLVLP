@@ -12,6 +12,7 @@ function weeklyPromotions(evt, promotionsName) {
 
     document.getElementById(promotionsName).style.display = "flex";
     evt.currentTarget.className += " active";
+
 }
 
 // Slider Function

@@ -1,5 +1,7 @@
 /* Responsive */
 
+
+/*  MAX-WIDTH 900PX */
 @media (max-width: 900px) {
 
     section {
@@ -30,9 +32,13 @@
         padding-bottom: 160px;
     }
 
+    .second-panel {
+        padding-bottom: 280px;
+    }
 
     .right-panel {
-        margin-left: 0;
+        height: 410px;
+        margin: 100px 0 0 0;
     }
 
     .left-panel {
@@ -45,12 +51,20 @@
     }
 
     .plus {
-        top: 93%;
+        top: 100%;
         left: 39%;
     }
 
     .plus img {
         width: 85px;
+    }
+
+    .dark-orange {
+        margin-left: -20px;
+    }
+
+    .panel-text.second {
+        margin-top: -12px;
     }
 
     .slider,
@@ -62,12 +76,17 @@
         width: 2000px;
     }
 
+    .slider-section {
+        margin-right: 7px;
+    }
+
     .item img {
         width: 180px
     }
 
     .accordion ul {
         width: 90%;
+        margin-right: -35px;
     }
 
     .checkbox-text {
@@ -94,6 +113,9 @@
 
 }
 
+/* END */
+
+/* MAX-WIDTH 640PX */
 @media (max-width: 640px) {
     .firstpage {
         margin: auto;
@@ -125,7 +147,7 @@
     .banner-cards img {
         max-width: 100%;
     }
-    
+
     .card-text h5 {
         font-size: 16px;
     }
@@ -142,29 +164,50 @@
         max-width: 90%;
     }
 
-    /* .popup-texts p {
-        max-width: 90%;
-    } */
+    .popup-texts p {
+        width: 296px;
+        margin-top: 0px;
+    }
 
     .prizes-title {
         font-size: 14px;
     }
 
-    /* .date-tabs ul li {
-        width: 80px;
+    .date-tabs ul li {
+        width: 110px;
+        text-align: center;
+        list-style: none;
+        font-size: 15px;
+        color: #ffffff;
+        cursor: pointer;
     }
 
-    .date-tabs ul {
-        width: 80px;
-    } */
+    .date-tabs ul li.active {
+        line-height: 40px;
+        height: 100%;
+        border-radius: 8px 8px 0 0;
+        background-color: #2e9ea1;
+    }
 
+    .panel {
+        width: 97%;
+    }
+
+    .accordion ul {
+        margin-right: -27px;
+    }
 
     .right-panel {
         margin-left: 0;
+        margin-top: 100px;
     }
 
     .left-panel {
         margin-right: 0;
+    }
+
+    .dark-orange {
+        margin-left: -20px;
     }
 
     .slider-wrap-text {
@@ -194,9 +237,9 @@
         padding: 20px 10px;
     }
 }
+/* END */
 
-
-
+/* MAX-WIDTH 480PX */
 @media (max-width: 480px) {
 
     .banner {
@@ -238,23 +281,42 @@
     }
 
 
+    .accordion ul {
+        margin-right: -10px;
+    }
+
     .date-tabs ul li {
-        width: 56px;
+        width: 120px;
         font-size: 11px;
+    }
+
+    .date-tabs.active {
+        width: 120px;
+    }
+
+
+    .date-tabs ul li {
+        width: 80px;
+    }
+
+    .tabs.active {
+        width: 90px;
     }
 
     .popup {
         max-width: 345px;
-      }
-      
-      .popup-texts h3 {
+    }
+
+    .popup-texts h3 {
         margin-left: 0;
-      }
-      
-      .popup-texts p{
+    }
+
+    .popup-texts p {
         text-align: start;
         letter-spacing: -0.8px;
-      }
+        width: 230px;
+        margin-left: 0px;
+    }
 
 
     .right-panel {
@@ -274,7 +336,25 @@
     }
 
     .table-title h1 {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .cyan {
+        width: 155px;
+    }
+
+    .orange {
+        width: 155px;
+    }
+
+
+    .dark-cyan {
+        width: 90px;
+    }
+
+    .dark-orange {
+        width: 70px;
+        margin-left: -10px;
     }
 
     .rank-tr td {
@@ -293,17 +373,17 @@
         font-size: 12px;
     }
 
+    .right-panel {
+        margin-top: 114px;
+    }
+
     .panel-text p {
         margin-top: 10px;
     }
 
     .plus {
-        top: 93%;
+        top: 102%;
         left: 41%;
-    }
-
-    .plus img {
-        width: 70px;
     }
 
     .prizes-bottom-text {
@@ -349,7 +429,6 @@
         width: 140px;
         height: 50px;
     }
-
 }
 
 /* End */
